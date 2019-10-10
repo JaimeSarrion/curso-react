@@ -60,8 +60,8 @@ class App extends Component {
       persons = (
         <div >
           <Persons
-            clicked={this.nameChangedHandler}
-            changed={this.deletePersonHandler}
+            clicked={this.deletePersonHandler}
+            changed={this.nameChangedHandler}
             persons={this.state.persons}
           />
         </div>
