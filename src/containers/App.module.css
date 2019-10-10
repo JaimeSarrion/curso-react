@@ -1,18 +1,3 @@
-
-.App button{
-    border: 1 px solid blue;
-    padding: 8px;
-    background-color: green;
-    color: white;
-    font: inherit;
-    cursor: pointer;
+.App {
+    text-align: center;
 }
-
-.red{
-    color:red;
-}
-
-.bold{
-    font-weight: bold;
-}
-

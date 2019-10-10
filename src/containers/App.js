@@ -5,13 +5,30 @@ import classes from './App.module.css'
 import Cockpit from '../components/Cockpit/Cockpit';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    console.log("App.js contructor doing things")
+  }
+
   state = {
     persons: [
       { id: '1', name: 'Max', age: 29 },
       { id: '2', name: 'Manu', age: 24 },
       { id: '3', name: 'Stephanie', age: 12 },
     ],
-    ostherState: 'some other value'
+    ostherState: 'some other value',
+    showCockpit: true,
+  }
+
+  static getDerivedStateFromProps(props, state){
+    console.log("App.js getDerivedStateFromProps", props)
+    return state;
+  }
+  // componentWillMount(){
+  //   console.log("App.js componentWillMount")
+  // }
+  componentDidMount(){
+    console.log("App.js componentDidMount")
   }
 
   switchNameHandler = (newName) => {
@@ -54,6 +71,7 @@ class App extends Component {
   }
 
   render() {
+    console.log("App.js rendering...")
     let persons = null;
 
     if (this.state.showPersons) {
@@ -69,11 +87,15 @@ class App extends Component {
 
     return (
         <div className={classes.App}>
-          <Cockpit
+          <button onClick={()=> {this.setState({showCockpit: false})}}>
+            Remove Cockpit
+          </button>
+          {this.state.showCockpit ? <Cockpit
+            title = {this.props.appTitle}
             showPersons={this.state.showPersons}
             persons = {this.state.persons}
             clicked = {this.togglePersonsHandler}
-          />
+          /> : null}
           {persons}
         </div>
     );
