@@ -1,13 +1,16 @@
 import React from 'react'
-import classes from '.Nutton.module.css'
+import classes from './Button.module.css'
 
-const button = (props) => (
-    <button
-        className={[classes.Button,classes[props.btnType]].join('')}
-        onClick={props.clicked}
-    >
-        {props.children}
-    </button>
-)
+const button = (props) => {
+    console.log([classes.Button, classes[props.btnType]].join(''))
+    return (
+        <button
+            className={[classes.Button, classes[props.btnType]].join(' ')}
+            onClick={props.clicked}
+        >
+            {props.children}
+        </button>
 
+    )
+}
 export default button;
