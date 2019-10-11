@@ -68,6 +68,7 @@ class BurguerBuilder extends Component{
                     ingredientAdded= {this.addIngredientHandler}
                     ingredientRemoved = {this.removeIngredientHandler}
                     disabled={disableInfo}
+                    price={this.state.totalPrice}
                 ></BuildControls>
             </Aux>       
         );
