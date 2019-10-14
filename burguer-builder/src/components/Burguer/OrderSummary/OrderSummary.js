@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Aux from '../../../hoc/Auxiliarie'
+import Aux from '../../../hoc/Auxiliarie/Auxiliarie'
 import Button from '../../UI/Button/Button'
 
 
