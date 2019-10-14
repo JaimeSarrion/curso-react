@@ -36,23 +36,33 @@ By the end of the course, you can build amazing React (single page) applications
 
 **Phone view**
 
+<p align="center">
 <img width=40% height=40% src="/burguer-builder/src/assets/images/GithubImages/mobile-view.png">
+ </p>
 
 **Initial state**
 
+<p align="center">
 <img width=40% height=40% src="/burguer-builder/src/assets/images/GithubImages/Initial-state.png">
+ </p>
 
 **Adding ingredients**
 
+<p align="center">
 <img width=40% height=40% src="/burguer-builder/src/assets/images/GithubImages/adding-ingredients.png">
+ </p>
 
 **Side Draw**
 
+<p align="center">
 <img width=40% height=40% src="/burguer-builder/src/assets/images/GithubImages/SideDraw.png">
+ </p>
 
 **Order Summary**
 
+<p align="center">
 <img width=40% height=40% src="/burguer-builder/src/assets/images/GithubImages/Order-Summary.png">
+</p>
 
 
 
