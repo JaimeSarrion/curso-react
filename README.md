@@ -85,7 +85,7 @@ To run either projects you have to use this command after run ```npm install```:
 
 ## Functionalities
 
-What you can see in this projects:
+What can you find in these projects?
 - How components works
 - What kinds of components we have
 - React Basics (Base features, syntax and concepts)
