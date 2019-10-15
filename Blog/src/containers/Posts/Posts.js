@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
 import Post from '../../components/Post/Post'
+import { Route} from 'react-router-dom'
+
 import './Posts.css'
+import FullPost from '../FullPost/FullPost'
+
 
 
 class Posts extends Component {
-    
+
     state = {
         post: [],
-        selectedPostId : null,
+        selectedPostId: null,
         error: null
     }
 
@@ -16,7 +20,7 @@ class Posts extends Component {
         console.log(this.props)
         Axios.get('/posts')
             .then((response) => {
-                const post = response.data.slice(0,4)
+                const post = response.data.slice(0, 4)
                 const updatedPost = post.map(post => {
                     return {
                         ...post,
@@ -25,32 +29,41 @@ class Posts extends Component {
                 })
 
                 this.setState({ post: updatedPost })
-            }).catch(err=>{
+            }).catch(err => {
                 console.log(err)
                 // this.setState({error: true})
             })
     }
 
     postSelectedHandler = (id) => {
-        this.setState({selectedPostId: id})
+        // this.props.history.push({ pathname: '/' + id });
+        this.props.history.push('/' + id)
     }
 
     render() {
-        let posts = <p style={{textAlign: 'center'}}>Something went wrong</p>
+        let posts = <p style={{ textAlign: 'center' }}>Something went wrong</p>
         if (!this.state.error) {
             posts = this.state.post.map((post) => {
-                return <Post
-                    key={post.id} 
-                    title={post.title}
-                    author= {post.author} 
-                    click = {()=>this.postSelectedHandler(post.id)}/>
+                return (
+                    // <Link to={'/' + post.id} >
+                    <Post
+                        key={post.id}
+                        title={post.title}
+                        author={post.author}
+                        click={() => this.postSelectedHandler(post.id)} />
+                    // </Link>
+                )
             })
         }
-            
+
         return (
-            <section className="Posts">
-                {posts}
-            </section>
+            <div>
+                <section className="Posts">
+                    {posts}
+                </section>
+                <Route path="/:id" exact component={FullPost} />
+            </div>
+
         )
     }
 }

@@ -3,29 +3,29 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import Axios from 'axios';
+import axios from 'axios';
 
-Axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com'  
-Axios.defaults.headers.common['Authorization'] = 'AUTH TOKEN'
-Axios.defaults.headers.post['Conten'] = 'application/json'
+axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com';
+axios.defaults.headers.common['Authorization'] = 'AUTH TOKEN';
+axios.defaults.headers.post['Content-Type'] = 'application/json';
 
-Axios.interceptors.request.use(request=>{
-    console.log(request)
-    //Edit before send something
-    return request
+axios.interceptors.request.use(request => {
+    console.log(request);
+    // Edit request config
+    return request;
 }, error => {
-    console.log(error)
-    return Promise.reject(error)
+    console.log(error);
+    return Promise.reject(error);
 });
 
-Axios.interceptors.response.use(response=>{
-    console.log(response)
-    //Edit before send something
-    return response
+axios.interceptors.response.use(response => {
+    console.log(response);
+    // Edit request config
+    return response;
 }, error => {
-    console.log(error)
-    return Promise.reject(error)
-})
+    console.log(error);
+    return Promise.reject(error);
+});
 
 ReactDOM.render( <App />, document.getElementById( 'root' ) );
 registerServiceWorker();
