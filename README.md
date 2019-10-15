@@ -26,9 +26,62 @@ This course will **start at the very basics** and explain what exactly React is 
 
 By the end of the course, you can build amazing React (single page) applications!
 
-# Some screenshots
+# Projects inside
 
-## Burger builder
+## 1. Person Manager
+
+### Introduction
+
+[Person Manager](https://github.com/JaimeSarrion/curso-react/tree/master/Person%20Manager) is a React project which aims to show the basics of React, things like: how to manage the props between components, how to call or import new components and such.
+
+### What I have learned
+
+- About the different kinds of components and how they works:
+  + Stateless, Stateful...
+- Component's Lifecycle
+- Hooks 
+  +  useEffect, useState
+- The context, how, when and why we have to use it
+- Adding a CSS Modules Stylesheet
+- Working with list and conditionals
+- Debugging React Apps
+  
+### Used tools
+
+- Context
+- useState
+- useEffect
+
+## 2. Burger builder
+ 
+### Introduction
+
+[Burguer builder](https://github.com/JaimeSarrion/curso-react/tree/master/burguer-builder) react project is a bit more complex. This project try to show how to build a react application (A burguer application), and how to solve the problems that you can find when you are developing a real application.
+
+### What I have learned
+
+- Validating React components with PropTypes to avoid errors
+- Learn how to use Axios
+   + Managing errors 
+   + Managing global instances
+- [Firebase](https://firebase.google.com/?hl=es-419)
+   + Create and manage a non-relational database
+   + REST petitions
+- [JSONPlaceHolder](https://jsonplaceholder.typicode.com/)
+   + Test our REST calls before call Firebase
+- Webpack
+   + Change some configurations to be able to use CSS Modules Stylesheets
+- HOC: High Order Components
+   + How does ir works
+   + His utility
+   + When we have to use
+
+### Used tools
+ 
+- PropTypes
+- Axios
+- Firebase
+- JSONPlaceHolder
  
 **Web view**
 
@@ -64,15 +117,40 @@ By the end of the course, you can build amazing React (single page) applications
 <img width=40% height=40% src="/burguer-builder/src/assets/images/GithubImages/Order-Summary.png">
 </p>
 
+## 3. Blog
+
+### Introduction
+
+The [Blog](https://github.com/JaimeSarrion/curso-react/tree/master/Blog) application is made with the aim of learn how to do some asynchronous calls and how to manage this data. Also this web app shows how add some routing to the app.
+
+### What I have learned
+
+- Axios
+  + Manage asynchronous calls 
+- Set up the rendering routes
+- Render Components for Routes
+- Switch between Pages
+- Use links to Switch Pages
+- Use routing-related props
+- Use "withRouter"
+- Absolute and relative Paths
+- Style the active Route
+- Extract Route Parameters
+- Parse Query parameters
+- Navigate Programmatically
+- Create Dynamic Nested Routes
+- Conditional redirects
 
 
+### Used tools
 
+- Axios
+- react-router-dom
+- react-router
 
 # Deploy guide
 
-There are two projects inside this repository:
- - [Person Manager](https://github.com/JaimeSarrion/curso-react/tree/master/Person%20Manager) is a react project which aims to learn the basics of React, and also shows how his lifecylce works.
- - [Burguer builder](https://github.com/JaimeSarrion/curso-react/tree/master/burguer-builder) react project is a bit more complex. This project try to show how to build a react application (A burguer application), and how to solve the problems that you can find when you are developing a real application.
+Now I want to show you how to deploy and run each project.
 
 ## Prerequisites
 
@@ -93,7 +171,7 @@ To run either projects you have to use this command after run ```npm install```:
  
  Now open your favourite browser and go to: ```http://localhost:3000/```. This route will open you aplication.
 
-## Functionalities
+# Functionalities
 
 What can you find in these projects?
 - How components works
@@ -104,7 +182,7 @@ What can you find in these projects?
 - Styling of React components
 - React app deployment instructions
 
-# Authors
+# Author
 
 - [Jaime Sarrión](https://www.linkedin.com/in/jaime-sarrion-sahuquillo/)
 
