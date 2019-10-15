@@ -71,8 +71,8 @@ By the end of the course, you can build amazing React (single page) applications
 # Deploy guide
 
 There are two projects inside this repository:
- - [The first](https://github.com/JaimeSarrion/curso-react/tree/master/Person%20Manager) is a react project which aims to learn the basics of React, and also shows how his lifecylce works.
- - [The second](https://github.com/JaimeSarrion/curso-react/tree/master/burguer-builder) react project is a bit more complex. This project try to show how to build a react application (A burguer application), and how to solve the problems that you can find when you are developing a real application.
+ - [Person Manager](https://github.com/JaimeSarrion/curso-react/tree/master/Person%20Manager) is a react project which aims to learn the basics of React, and also shows how his lifecylce works.
+ - [Burguer builder](https://github.com/JaimeSarrion/curso-react/tree/master/burguer-builder) react project is a bit more complex. This project try to show how to build a react application (A burguer application), and how to solve the problems that you can find when you are developing a real application.
 
 ## Prerequisites
 
